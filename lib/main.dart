@@ -4,6 +4,7 @@ import 'package:rice_dieseas/two.dart';
 import 'package:rice_dieseas/three.dart';
 import 'package:rice_dieseas/four.dart';
 import 'package:remixicon/remixicon.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(const MyApp());
 
@@ -37,15 +38,21 @@ class _HomepageState extends State<Homepage> {
         currentIndex: _currentindex,
         items: [
           BottomNavigationBarItem(
-              backgroundColor: Colors.orange,
+              backgroundColor: Color.fromARGB(255, 13, 247, 83),
               icon: Icon(Icons.home),
               label: 'Home'),
           BottomNavigationBarItem(
-              icon: Icon((Remix.find_replace_fill)), label: 'Test'),
+              backgroundColor: Colors.orange,
+              icon: Icon((Remix.find_replace_fill)),
+              label: 'Test'),
           BottomNavigationBarItem(
-              icon: Icon((Remix.user_settings_line)), label: "Profile"),
+              backgroundColor: Color.fromRGBO(255, 172, 7, 0.623),
+              icon: Icon((Remix.user_settings_line)),
+              label: "Profile"),
           BottomNavigationBarItem(
-              icon: Icon((Icons.dashboard)), label: 'Others'),
+              backgroundColor: Colors.purple,
+              icon: Icon((Icons.dashboard)),
+              label: 'Others'),
         ],
         onTap: (index) {
           setState(() {
