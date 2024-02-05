@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class Four extends StatefulWidget {
   const Four({super.key});
 
@@ -17,43 +18,43 @@ class _FourState extends State<Four> {
             SliverAppBar(
               pinned: true,
               expandedHeight: 200,
-               backgroundColor: Colors.red,
+              backgroundColor: Colors.red,
               flexibleSpace: FlexibleSpaceBar(
                 title: Text("Flexible Space"),
               ),
             ),
-            SliverList(delegate: SliverChildListDelegate(<Widget>[
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-              addDetails("Shanto", "Goa mara"),
-
+            SliverList(
+                delegate: SliverChildListDelegate(<Widget>[
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
+              addDetails("Shanto", "Parker Mor, Rangpur"),
             ]))
           ],
         ),
@@ -65,11 +66,12 @@ class _FourState extends State<Four> {
 Widget addDetails(
   String name,
   String description,
-){
+) {
   return ListTile(
     title: Text(name),
     subtitle: Text(description),
-    leading: CircleAvatar(child: Text(name[0]),),
+    leading: CircleAvatar(
+      child: Text(name[0]),
+    ),
   );
 }
-
