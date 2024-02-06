@@ -3,6 +3,7 @@ import 'package:rice_dieseas/one.dart';
 import 'package:rice_dieseas/two.dart';
 import 'package:rice_dieseas/three.dart';
 import 'package:rice_dieseas/four.dart';
+import 'package:rice_dieseas/fifth.dart';
 import 'package:remixicon/remixicon.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -28,9 +29,15 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
-  var _currentindex = 0;
+  var _currentindex = 4;
 
-  final pages = [One(), Two(), Three(), Four()];
+  final pages = [
+    One(),
+    Two(),
+    Three(),
+    Four(),
+    Fifth(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,6 +60,10 @@ class _HomepageState extends State<Homepage> {
               backgroundColor: Colors.purple,
               icon: Icon((Icons.dashboard)),
               label: 'Others'),
+          BottomNavigationBarItem(
+              backgroundColor: Colors.lightBlue,
+              icon: Icon((Icons.login)),
+              label: 'Login'),
         ],
         onTap: (index) {
           setState(() {

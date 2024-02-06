@@ -6,9 +6,9 @@ class Three extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text("Third Page"),
+    return MaterialApp(
+      home: Center(
+        child: Text('Page Three'),
       ),
     );
   }
