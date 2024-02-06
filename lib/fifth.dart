@@ -27,15 +27,6 @@ class Fifth extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => Loginpage()));
               },
               child: Text('Login Page')),
-          SizedBox(
-            height: 30,
-          ),
-          ElevatedButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Signuppage()));
-              },
-              child: Text('Sign up Page')),
         ]),
       ),
     );

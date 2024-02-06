@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:rice_dieseas/forgetpass.dart';
+import 'package:rice_dieseas/main.dart';
+import 'package:rice_dieseas/signuppage.dart';
 
 class Loginpage extends StatefulWidget {
   const Loginpage({super.key});
@@ -39,6 +42,7 @@ class _LoginpageState extends State<Loginpage> {
                   TextField(
                     decoration: InputDecoration(
                       fillColor: Colors.grey.shade100,
+                      filled: true,
                       hintText: 'Email',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)),
@@ -51,11 +55,79 @@ class _LoginpageState extends State<Loginpage> {
                     obscureText: true,
                     decoration: InputDecoration(
                       fillColor: Colors.grey.shade100,
+                      filled: true,
                       hintText: 'Password',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)),
                     ),
                   ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text(
+                        'Sign in',
+                        style: TextStyle(
+                            fontSize: 27,
+                            fontWeight: FontWeight.w700,
+                            color: Color(0xff4c505b)),
+                      ),
+                      CircleAvatar(
+                        radius: 30,
+                        backgroundColor: Color(0xff4c505b),
+                        child: IconButton(
+                          color: Colors.white,
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Homepage()));
+                          },
+                          icon: Icon(Icons.arrow_forward),
+                        ),
+                      )
+                    ],
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(
+                      top: 40,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Signuppage()));
+                            },
+                            child: Text(
+                              'Sign Up',
+                              style: TextStyle(
+                                  decoration: TextDecoration.underline,
+                                  fontSize: 18,
+                                  color: Color(0xff4c505b)),
+                            )),
+                        TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Forgetpass()));
+                            },
+                            child: Text(
+                              'Forget Password?',
+                              style: TextStyle(
+                                  decoration: TextDecoration.underline,
+                                  fontSize: 18,
+                                  color: Color(0xff4c505b)),
+                            )),
+                      ],
+                    ),
+                  )
                 ]),
               ),
             )
