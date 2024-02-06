@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rice_dieseas/loginpage.dart';
 import 'package:rice_dieseas/one.dart';
 import 'package:rice_dieseas/two.dart';
 import 'package:rice_dieseas/three.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Homepage(),
+      home: Loginpage(),
     );
   }
 }
@@ -29,7 +30,7 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
-  var _currentindex = 4;
+  var _currentindex = 0;
 
   final pages = [
     One(),
@@ -45,7 +46,7 @@ class _HomepageState extends State<Homepage> {
         currentIndex: _currentindex,
         items: [
           BottomNavigationBarItem(
-              backgroundColor: Color.fromARGB(255, 13, 247, 83),
+              backgroundColor: Color.fromARGB(255, 131, 189, 6),
               icon: Icon(Icons.home),
               label: 'Home'),
           BottomNavigationBarItem(
