@@ -35,9 +35,9 @@ class _HomepageState extends State<Homepage> {
   final pages = [
     One(),
     Two(),
-    Three(),
     Four(),
     Fifth(),
+    Three(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -54,17 +54,17 @@ class _HomepageState extends State<Homepage> {
               icon: Icon((Remix.find_replace_fill)),
               label: 'Test'),
           BottomNavigationBarItem(
+              backgroundColor: Colors.purple,
+              icon: Icon((Icons.dashboard)),
+              label: 'Diseases'),
+          BottomNavigationBarItem(
+              backgroundColor: Colors.lightBlue,
+              icon: Icon((Icons.flag_outlined)),
+              label: 'Report'),
+          BottomNavigationBarItem(
               backgroundColor: Color.fromRGBO(255, 172, 7, 0.623),
               icon: Icon((Remix.user_settings_line)),
               label: "Profile"),
-          BottomNavigationBarItem(
-              backgroundColor: Colors.purple,
-              icon: Icon((Icons.dashboard)),
-              label: 'Others'),
-          BottomNavigationBarItem(
-              backgroundColor: Colors.lightBlue,
-              icon: Icon((Icons.login)),
-              label: 'Login'),
         ],
         onTap: (index) {
           setState(() {

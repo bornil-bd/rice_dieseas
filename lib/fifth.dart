@@ -10,23 +10,22 @@ class Fifth extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Page routing')),
+        title: Center(
+            child: Text(
+          'REPORTS',
+          style: TextStyle(
+            fontWeight: FontWeight.w900,
+            color: Colors.lightBlue,
+            letterSpacing: 2,
+          ),
+        )),
       ),
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Text(
-            'Welcome',
-            style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
+            'Your reports will \nbe shown here',
+            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
           ),
-          SizedBox(
-            height: 20,
-          ),
-          ElevatedButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Loginpage()));
-              },
-              child: Text('Login Page')),
         ]),
       ),
     );

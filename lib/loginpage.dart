@@ -80,10 +80,12 @@ class _LoginpageState extends State<Loginpage> {
                         child: IconButton(
                           color: Colors.white,
                           onPressed: () {
-                            Navigator.push(
+                            Navigator.pushAndRemoveUntil(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Homepage()));
+                                    builder: (context) => Homepage(),
+                                    maintainState: true),
+                                (Route<dynamic> route) => false);
                           },
                           icon: Icon(Icons.arrow_forward),
                         ),

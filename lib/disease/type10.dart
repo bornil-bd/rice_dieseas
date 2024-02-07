@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Type1 extends StatefulWidget {
-  const Type1({super.key});
+class Type10 extends StatefulWidget {
+  const Type10({super.key});
 
   @override
-  State<Type1> createState() => _Type1State();
+  State<Type10> createState() => _Type10State();
 }
 
-class _Type1State extends State<Type1> {
+class _Type10State extends State<Type10> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +26,7 @@ class _Type1State extends State<Type1> {
               ),
             ),
             SizedBox(
-              height: 50,
+              height: 20,
             ),
             Center(
               child: Container(
@@ -38,9 +38,6 @@ class _Type1State extends State<Type1> {
                   ),
                 ),
               ),
-            ),
-            SizedBox(
-              height: 50,
             ),
             Container(
               padding: EdgeInsets.only(left: 20, right: 20),

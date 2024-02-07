@@ -14,6 +14,7 @@ class Two extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: homepage(),
     );
   }
@@ -57,7 +58,15 @@ class _homepageState extends State<homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Pick an image"),
+        centerTitle: true,
+        title: Text(
+          "TEST",
+          style: TextStyle(
+            fontWeight: FontWeight.w900,
+            color: Colors.orange,
+            letterSpacing: 2,
+          ),
+        ),
       ),
       body: Center(
           child: Column(
@@ -69,13 +78,12 @@ class _homepageState extends State<homepage> {
                   height: 250,
                   fit: BoxFit.cover,
                 )
-              : Image.network(
-                  "https://fastly.picsum.photos/id/2/5000/3333.jpg?hmac=_KDkqQVttXw_nM-RyJfLImIbafFrqLsuGO5YuHqD-qQ"),
+              : Image.asset("assets/pickcover.jpg"),
           SizedBox(
             height: 40,
           ),
           CustomButton(
-            title: 'Pick from Gallery',
+            title: 'Pick photo from Gallery',
             icon: Icons.image_outlined,
             onClick: () => getImage(ImageSource.gallery),
           ),
@@ -83,7 +91,7 @@ class _homepageState extends State<homepage> {
             height: 40,
           ),
           CustomButton(
-            title: 'Pick from Camera',
+            title: 'Take photo from camera',
             icon: Icons.camera,
             onClick: () => getImage(ImageSource.camera),
           ),

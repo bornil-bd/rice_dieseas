@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Type1 extends StatefulWidget {
-  const Type1({super.key});
+class Type2 extends StatefulWidget {
+  const Type2({super.key});
 
   @override
-  State<Type1> createState() => _Type1State();
+  State<Type2> createState() => _Type2State();
 }
 
-class _Type1State extends State<Type1> {
+class _Type2State extends State<Type2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Bacterial Leaf Blight (BLB)"),
+        title: Text("Blast"),
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
@@ -26,21 +26,18 @@ class _Type1State extends State<Type1> {
               ),
             ),
             SizedBox(
-              height: 50,
+              height: 20,
             ),
             Center(
               child: Container(
                 child: Text(
-                  "Bacterial Leaf Blight (BLB)",
+                  "Blast",
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ),
-            ),
-            SizedBox(
-              height: 50,
             ),
             Container(
               padding: EdgeInsets.only(left: 20, right: 20),

@@ -14,14 +14,14 @@ class Three extends StatelessWidget {
       appBar: AppBar(
         title: Center(
           child: Text(
-            'Profile',
+            'PROFILE',
+            style: TextStyle(
+              fontWeight: FontWeight.w900,
+              color: Color.fromRGBO(255, 172, 7, 0.623),
+              letterSpacing: 2,
+            ),
           ),
         ),
-        actions: [
-          IconButton(
-              onPressed: () {},
-              icon: Icon(isDark ? LineAwesomeIcons.sun : LineAwesomeIcons.moon))
-        ],
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -103,7 +103,7 @@ class Three extends StatelessWidget {
                   icon: LineAwesomeIcons.cog,
                   onPress: () {}),
               ProfileMenuWidget(
-                  title: "Builling Deatils",
+                  title: "Test Report Deatils",
                   icon: LineAwesomeIcons.wallet,
                   onPress: () {}),
               ProfileMenuWidget(

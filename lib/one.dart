@@ -10,12 +10,15 @@ class One extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(147, 231, 173, 1),
+        // backgroundColor: Color.fromRGBO(147, 231, 173, 1),
         title: Center(
           child: Text(
-            "Rice Disease Detector",
+            "HOMEPAGE",
             style: TextStyle(
-                color: Colors.white, fontSize: 25, fontWeight: FontWeight.w500),
+              fontWeight: FontWeight.w900,
+              color: Color.fromARGB(255, 131, 189, 6),
+              letterSpacing: 2,
+            ),
           ),
         ),
       ),
