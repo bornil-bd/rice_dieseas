@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:rice_dieseas/four.dart';
 import 'package:rice_dieseas/two.dart';
 
 class One extends StatelessWidget {
@@ -11,7 +9,7 @@ class One extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         // backgroundColor: Color.fromRGBO(147, 231, 173, 1),
-        title: Center(
+        title: const Center(
           child: Text(
             "HOMEPAGE",
             style: TextStyle(
@@ -25,7 +23,7 @@ class One extends StatelessWidget {
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
               colors: [
                 Color.fromRGBO(147, 231, 173, 1),
@@ -49,16 +47,16 @@ class One extends StatelessWidget {
         child: Column(
           // crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(
+            SizedBox(
               height: MediaQuery.of(context).size.height / 3.1,
               width: MediaQuery.of(context).size.width,
               child: Image.asset("assets/leaf.jpg"),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Container(
-              child: Text(
+              child: const Text(
                 " Welcome to\n Rice Disease Detection\n & Identification App",
                 style: TextStyle(
                     fontSize: 30,
@@ -66,14 +64,14 @@ class One extends StatelessWidget {
                     fontWeight: FontWeight.w900),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Container(
               child: Row(
                 // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text(
+                  const Text(
                     "   TEST RICE DISEASE FROM",
                     style: TextStyle(
                         fontSize: 20,
@@ -83,9 +81,9 @@ class One extends StatelessWidget {
                   TextButton(
                       onPressed: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Two()));
+                            MaterialPageRoute(builder: (context) => const Two()));
                       },
-                      child: Text(
+                      child: const Text(
                         'HERE',
                         style: TextStyle(
                             decoration: TextDecoration.underline,

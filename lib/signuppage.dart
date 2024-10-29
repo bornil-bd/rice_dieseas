@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:rice_dieseas/forgetpass.dart';
-import 'package:rice_dieseas/loginpage.dart';
 import 'package:rice_dieseas/main.dart';
 
 class Signuppage extends StatefulWidget {
@@ -14,7 +12,7 @@ class _SignuppageState extends State<Signuppage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           image: DecorationImage(
               image: AssetImage('assets/register.png'), fit: BoxFit.cover)),
       child: Scaffold(
@@ -22,11 +20,11 @@ class _SignuppageState extends State<Signuppage> {
         body: Stack(
           children: [
             Container(
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                 left: 35,
                 top: 140,
               ),
-              child: Text(
+              child: const Text(
                 'Create\nAccount',
                 style: TextStyle(color: Colors.white, fontSize: 33),
               ),
@@ -40,60 +38,60 @@ class _SignuppageState extends State<Signuppage> {
                 ),
                 child: Column(children: [
                   TextField(
-                    style: TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.white),
                     decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(color: Colors.white)),
+                          borderSide: const BorderSide(color: Colors.white)),
                       focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(color: Colors.black)),
+                          borderSide: const BorderSide(color: Colors.black)),
                       hintText: 'Name',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   TextField(
-                    style: TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.white),
                     decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(color: Colors.white)),
+                          borderSide: const BorderSide(color: Colors.white)),
                       focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(color: Colors.black)),
+                          borderSide: const BorderSide(color: Colors.black)),
                       hintText: 'Email',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   TextField(
-                    style: TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.white),
                     decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(color: Colors.white)),
+                          borderSide: const BorderSide(color: Colors.white)),
                       focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(color: Colors.black)),
+                          borderSide: const BorderSide(color: Colors.black)),
                       hintText: 'Password',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      const Text(
                         'Sign up',
                         style: TextStyle(
                             fontSize: 27,
@@ -102,30 +100,30 @@ class _SignuppageState extends State<Signuppage> {
                       ),
                       CircleAvatar(
                         radius: 30,
-                        backgroundColor: Color(0xff4c505b),
+                        backgroundColor: const Color(0xff4c505b),
                         child: IconButton(
                           color: Colors.white,
                           onPressed: () {
                             Navigator.pushAndRemoveUntil(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Homepage(),
+                                    builder: (context) => const Homepage(),
                                     maintainState: true),
                                 (Route<dynamic> route) => false);
                           },
-                          icon: Icon(Icons.arrow_forward),
+                          icon: const Icon(Icons.arrow_forward),
                         ),
                       )
                     ],
                   ),
                   Container(
-                    padding: EdgeInsets.only(
+                    padding: const EdgeInsets.only(
                       top: 50,
                     ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Text(
+                        const Text(
                           'Alredy Have an account?',
                           style: TextStyle(color: Color(0xff4c505b)),
                         ),
@@ -133,7 +131,7 @@ class _SignuppageState extends State<Signuppage> {
                             onPressed: () {
                               Navigator.pop(context);
                             },
-                            child: Text(
+                            child: const Text(
                               'Sign in',
                               style: TextStyle(
                                   decoration: TextDecoration.underline,

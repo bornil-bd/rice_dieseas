@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:rice_dieseas/edit_profile.dart';
 import 'package:rice_dieseas/profile_menu.dart';
@@ -12,7 +11,7 @@ class Three extends StatelessWidget {
     var isDark = MediaQuery.of(context).platformBrightness == Brightness.dark;
     return Scaffold(
       appBar: AppBar(
-        title: Center(
+        title: const Center(
           child: Text(
             'PROFILE',
             style: TextStyle(
@@ -25,7 +24,7 @@ class Three extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.all(50),
+          padding: const EdgeInsets.all(50),
           child: Column(
             children: [
               Stack(
@@ -35,7 +34,7 @@ class Three extends StatelessWidget {
                     height: 120,
                     child: ClipRRect(
                         borderRadius: BorderRadius.circular(100),
-                        child: Image(image: AssetImage("assets/bornil1.png"))),
+                        child: const Image(image: AssetImage("assets/bornil1.png"))),
                   ),
                   Positioned(
                     bottom: 0,
@@ -47,7 +46,7 @@ class Three extends StatelessWidget {
                         borderRadius: BorderRadius.circular(100),
                         color: Colors.orange.withOpacity(0.1),
                       ),
-                      child: Icon(
+                      child: const Icon(
                         LineAwesomeIcons.alternate_pencil,
                         size: 20,
                         color: Colors.black,
@@ -56,7 +55,7 @@ class Three extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Text(
@@ -67,7 +66,7 @@ class Three extends StatelessWidget {
                 "ezaz.hb@gmail.com",
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               SizedBox(
@@ -83,17 +82,17 @@ class Three extends StatelessWidget {
                     backgroundColor: Colors.yellow,
                     side: BorderSide.none,
                   ),
-                  child: Text(
+                  child: const Text(
                     "Edit Profile",
                     style: TextStyle(color: Colors.black),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
-              Divider(),
-              SizedBox(
+              const Divider(),
+              const SizedBox(
                 height: 10,
               ),
 
@@ -110,11 +109,11 @@ class Three extends StatelessWidget {
                   title: "User Management",
                   icon: LineAwesomeIcons.user_check,
                   onPress: () {}),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
-              Divider(),
-              SizedBox(
+              const Divider(),
+              const SizedBox(
                 height: 10,
               ),
               ProfileMenuWidget(

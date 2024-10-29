@@ -6,7 +6,6 @@ import 'package:rice_dieseas/three.dart';
 import 'package:rice_dieseas/four.dart';
 import 'package:rice_dieseas/fifth.dart';
 import 'package:remixicon/remixicon.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(const MyApp());
 
@@ -33,18 +32,18 @@ class _HomepageState extends State<Homepage> {
   var _currentindex = 0;
 
   final pages = [
-    One(),
-    Two(),
-    Four(),
-    Fifth(),
-    Three(),
+    const One(),
+    const Two(),
+    const Four(),
+    const Fifth(),
+    const Three(),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentindex,
-        items: [
+        items: const [
           BottomNavigationBarItem(
               backgroundColor: Color.fromARGB(255, 131, 189, 6),
               icon: Icon(Icons.home),

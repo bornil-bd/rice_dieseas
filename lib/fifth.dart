@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:rice_dieseas/loginpage.dart';
-import 'package:rice_dieseas/signuppage.dart';
 
 class Fifth extends StatelessWidget {
   const Fifth({super.key});
@@ -10,7 +7,7 @@ class Fifth extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
+        title: const Center(
             child: Text(
           'REPORTS',
           style: TextStyle(
@@ -20,7 +17,7 @@ class Fifth extends StatelessWidget {
           ),
         )),
       ),
-      body: Center(
+      body: const Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Text(
             'Your reports will \nbe shown here',

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class Type1 extends StatefulWidget {
   const Type1({super.key});
@@ -13,7 +12,7 @@ class _Type1State extends State<Type1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Bacterial Leaf Blight (BLB)"),
+        title: const Text("Bacterial Leaf Blight (BLB)"),
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
@@ -25,12 +24,12 @@ class _Type1State extends State<Type1> {
                 fit: BoxFit.cover,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Center(
               child: Container(
-                child: Text(
+                child: const Text(
                   "Bacterial Leaf Blight (BLB)",
                   style: TextStyle(
                     fontSize: 25,
@@ -39,11 +38,11 @@ class _Type1State extends State<Type1> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Container(
-              padding: EdgeInsets.only(left: 20, right: 20),
+              padding: const EdgeInsets.only(left: 20, right: 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -62,7 +61,7 @@ class _Type1State extends State<Type1> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   RichText(
@@ -82,7 +81,7 @@ class _Type1State extends State<Type1> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   RichText(

@@ -10,7 +10,7 @@ class Forgetpass extends StatefulWidget {
 class _ForgetpassState extends State<Forgetpass> {
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Scaffold(
         body: Text(
           'Password forget',

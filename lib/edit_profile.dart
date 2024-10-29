@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 class EditProfile extends StatefulWidget {
@@ -18,7 +17,7 @@ class _EditProfileState extends State<EditProfile> {
             onPressed: () {
               Navigator.pop(context);
             },
-            icon: Icon(LineAwesomeIcons.angle_left)),
+            icon: const Icon(LineAwesomeIcons.angle_left)),
         title: Text(
           "Edit profile",
           style: Theme.of(context).textTheme.headlineMedium,
@@ -26,7 +25,7 @@ class _EditProfileState extends State<EditProfile> {
       ),
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.all(50),
+          padding: const EdgeInsets.all(50),
           child: Column(
             children: [
               Stack(
@@ -36,7 +35,7 @@ class _EditProfileState extends State<EditProfile> {
                     height: 120,
                     child: ClipRRect(
                         borderRadius: BorderRadius.circular(100),
-                        child: Image(image: AssetImage("assets/bornil1.png"))),
+                        child: const Image(image: AssetImage("assets/bornil1.png"))),
                   ),
                   Positioned(
                     bottom: 0,
@@ -48,7 +47,7 @@ class _EditProfileState extends State<EditProfile> {
                         borderRadius: BorderRadius.circular(100),
                         color: Colors.orange.withOpacity(0.1),
                       ),
-                      child: Icon(
+                      child: const Icon(
                         LineAwesomeIcons.camera,
                         size: 20,
                         color: Colors.black,
@@ -57,45 +56,45 @@ class _EditProfileState extends State<EditProfile> {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               Form(
                   child: Column(
                 children: [
                   TextFormField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         label: Text("Full Name"),
                         hintText: "Enter your name",
                         prefixIcon: Icon(Icons.person_outline_rounded)),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   TextFormField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         label: Text("Email"),
                         hintText: "example@example.com",
                         prefixIcon: Icon(Icons.email_outlined)),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   TextFormField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         label: Text("Phone no."),
                         hintText: "11 digit number",
                         prefixIcon: Icon(Icons.numbers)),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   TextFormField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         label: Text("Password"),
                         prefixIcon: Icon(Icons.fingerprint)),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   SizedBox(
@@ -111,7 +110,7 @@ class _EditProfileState extends State<EditProfile> {
                         backgroundColor: Colors.yellow,
                         side: BorderSide.none,
                       ),
-                      child: Text(
+                      child: const Text(
                         "Save info",
                         style: TextStyle(color: Colors.black),
                       ),
@@ -129,7 +128,7 @@ class _EditProfileState extends State<EditProfile> {
 
 OutlineInputBorder myinputborder() {
   //return type is OutlineInputBorder
-  return OutlineInputBorder(
+  return const OutlineInputBorder(
       //Outline border type for TextFeild
       borderRadius: BorderRadius.all(Radius.circular(20)),
       borderSide: BorderSide(
@@ -139,7 +138,7 @@ OutlineInputBorder myinputborder() {
 }
 
 OutlineInputBorder myfocusborder() {
-  return OutlineInputBorder(
+  return const OutlineInputBorder(
       borderRadius: BorderRadius.all(Radius.circular(20)),
       borderSide: BorderSide(
         color: Colors.greenAccent,

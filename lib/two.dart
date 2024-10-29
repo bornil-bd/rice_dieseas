@@ -1,9 +1,7 @@
 import 'dart:io';
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart';
@@ -13,7 +11,7 @@ class Two extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: homepage(),
     );
@@ -39,7 +37,7 @@ class _homepageState extends State<homepage> {
       final imagePermanent = await saveFilePermanently(image.path);
 
       setState(() {
-        this._image = imagePermanent;
+        _image = imagePermanent;
       });
     } on PlatformException catch (e) {
       print('Failed to pick image: $e');
@@ -59,7 +57,7 @@ class _homepageState extends State<homepage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text(
+        title: const Text(
           "TEST",
           style: TextStyle(
             fontWeight: FontWeight.w900,
@@ -79,7 +77,7 @@ class _homepageState extends State<homepage> {
                   fit: BoxFit.cover,
                 )
               : Image.asset("assets/pickcover.jpg"),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           CustomButton(
@@ -87,7 +85,7 @@ class _homepageState extends State<homepage> {
             icon: Icons.image_outlined,
             onClick: () => getImage(ImageSource.gallery),
           ),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           CustomButton(
@@ -106,17 +104,17 @@ Widget CustomButton({
   required IconData icon,
   required VoidCallback onClick,
 }) {
-  return Container(
+  return SizedBox(
     width: 280,
     child: ElevatedButton(
       onPressed: onClick,
       child: Row(
         children: [
-          SizedBox(
+          const SizedBox(
             width: 20,
           ),
           Icon(icon),
-          SizedBox(
+          const SizedBox(
             width: 30,
           ),
           Text(title),

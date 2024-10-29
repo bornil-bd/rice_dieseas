@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:rice_dieseas/disease/type1.dart';
 import 'package:rice_dieseas/disease/type10.dart';
 import 'package:rice_dieseas/disease/type2.dart';
@@ -26,7 +25,7 @@ class _FourState extends State<Four> {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           appBar: AppBar(
-            title: Center(
+            title: const Center(
                 child: Text(
               'TYPES OF DISEASES',
               style: TextStyle(
@@ -44,9 +43,9 @@ class _FourState extends State<Four> {
                   title: TextButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Type1()));
+                          MaterialPageRoute(builder: (context) => const Type1()));
                     },
-                    child: Align(
+                    child: const Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
                           "Bacterial Leaf Blight (BLB)",
@@ -54,20 +53,20 @@ class _FourState extends State<Four> {
                         )),
                   ),
                   //subtitle: Text("Details about this disease"),
-                  leading: CircleAvatar(
+                  leading: const CircleAvatar(
                     backgroundImage: ExactAssetImage("assets/leaf.jpg"),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 ListTile(
                   title: TextButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Type2()));
+                          MaterialPageRoute(builder: (context) => const Type2()));
                     },
-                    child: Align(
+                    child: const Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
                           "Blast",
@@ -75,20 +74,20 @@ class _FourState extends State<Four> {
                         )),
                   ),
                   //subtitle: Text("Details about this disease"),
-                  leading: CircleAvatar(
+                  leading: const CircleAvatar(
                     backgroundImage: ExactAssetImage("assets/leaf.jpg"),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 ListTile(
                   title: TextButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Type3()));
+                          MaterialPageRoute(builder: (context) => const Type3()));
                     },
-                    child: Align(
+                    child: const Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
                           "Rice Tungro Disease",
@@ -96,20 +95,20 @@ class _FourState extends State<Four> {
                         )),
                   ),
                   //subtitle: Text("Details about this disease"),
-                  leading: CircleAvatar(
+                  leading: const CircleAvatar(
                     backgroundImage: ExactAssetImage("assets/leaf.jpg"),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 ListTile(
                   title: TextButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Type4()));
+                          MaterialPageRoute(builder: (context) => const Type4()));
                     },
-                    child: Align(
+                    child: const Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
                           "Sheath Blight",
@@ -117,20 +116,20 @@ class _FourState extends State<Four> {
                         )),
                   ),
                   //subtitle: Text("Details about this disease"),
-                  leading: CircleAvatar(
+                  leading: const CircleAvatar(
                     backgroundImage: ExactAssetImage("assets/leaf.jpg"),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 ListTile(
                   title: TextButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Type5()));
+                          MaterialPageRoute(builder: (context) => const Type5()));
                     },
-                    child: Align(
+                    child: const Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
                           "Brown Spot",
@@ -138,20 +137,20 @@ class _FourState extends State<Four> {
                         )),
                   ),
                   //subtitle: Text("Details about this disease"),
-                  leading: CircleAvatar(
+                  leading: const CircleAvatar(
                     backgroundImage: ExactAssetImage("assets/leaf.jpg"),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 ListTile(
                   title: TextButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Type6()));
+                          MaterialPageRoute(builder: (context) => const Type6()));
                     },
-                    child: Align(
+                    child: const Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
                           "Rice Blast",
@@ -159,20 +158,20 @@ class _FourState extends State<Four> {
                         )),
                   ),
                   //subtitle: Text("Details about this disease"),
-                  leading: CircleAvatar(
+                  leading: const CircleAvatar(
                     backgroundImage: ExactAssetImage("assets/leaf.jpg"),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 ListTile(
                   title: TextButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Type7()));
+                          MaterialPageRoute(builder: (context) => const Type7()));
                     },
-                    child: Align(
+                    child: const Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
                           "Rice Sheath Rot",
@@ -180,20 +179,20 @@ class _FourState extends State<Four> {
                         )),
                   ),
                   //subtitle: Text("Details about this disease"),
-                  leading: CircleAvatar(
+                  leading: const CircleAvatar(
                     backgroundImage: ExactAssetImage("assets/leaf.jpg"),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 ListTile(
                   title: TextButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Type8()));
+                          MaterialPageRoute(builder: (context) => const Type8()));
                     },
-                    child: Align(
+                    child: const Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
                           "Rice Leaf Scald",
@@ -201,20 +200,20 @@ class _FourState extends State<Four> {
                         )),
                   ),
                   //subtitle: Text("Details about this disease"),
-                  leading: CircleAvatar(
+                  leading: const CircleAvatar(
                     backgroundImage: ExactAssetImage("assets/leaf.jpg"),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 ListTile(
                   title: TextButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Type9()));
+                          MaterialPageRoute(builder: (context) => const Type9()));
                     },
-                    child: Align(
+                    child: const Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
                           "False Smut",
@@ -222,20 +221,20 @@ class _FourState extends State<Four> {
                         )),
                   ),
                   //subtitle: Text("Details about this disease"),
-                  leading: CircleAvatar(
+                  leading: const CircleAvatar(
                     backgroundImage: ExactAssetImage("assets/leaf.jpg"),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 ListTile(
                   title: TextButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Type10()));
+                          MaterialPageRoute(builder: (context) => const Type10()));
                     },
-                    child: Align(
+                    child: const Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
                           "Rice Bacterial Leaf Streak",
@@ -243,11 +242,11 @@ class _FourState extends State<Four> {
                         )),
                   ),
                   //subtitle: Text("Details about this disease"),
-                  leading: CircleAvatar(
+                  leading: const CircleAvatar(
                     backgroundImage: ExactAssetImage("assets/leaf.jpg"),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
               ]))

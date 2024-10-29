@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 class ProfileMenuWidget extends StatelessWidget {
@@ -48,7 +47,7 @@ class ProfileMenuWidget extends StatelessWidget {
                 borderRadius: BorderRadius.circular(100),
                 color: Colors.grey.withOpacity(0.1),
               ),
-              child: Icon(
+              child: const Icon(
                 LineAwesomeIcons.cog,
                 size: 18.0,
                 color: Colors.grey,

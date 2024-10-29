@@ -14,7 +14,7 @@ class _LoginpageState extends State<Loginpage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           image: DecorationImage(
               image: AssetImage('assets/login.png'), fit: BoxFit.cover)),
       child: Scaffold(
@@ -22,11 +22,11 @@ class _LoginpageState extends State<Loginpage> {
         body: Stack(
           children: [
             Container(
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                 left: 35,
                 top: 140,
               ),
-              child: Text(
+              child: const Text(
                 'Welcome\nBack',
                 style: TextStyle(color: Colors.white, fontSize: 33),
               ),
@@ -48,7 +48,7 @@ class _LoginpageState extends State<Loginpage> {
                           borderRadius: BorderRadius.circular(10)),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   TextField(
@@ -61,13 +61,13 @@ class _LoginpageState extends State<Loginpage> {
                           borderRadius: BorderRadius.circular(10)),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Text(
+                      const Text(
                         'Sign in',
                         style: TextStyle(
                             fontSize: 27,
@@ -76,24 +76,24 @@ class _LoginpageState extends State<Loginpage> {
                       ),
                       CircleAvatar(
                         radius: 30,
-                        backgroundColor: Color(0xff4c505b),
+                        backgroundColor: const Color(0xff4c505b),
                         child: IconButton(
                           color: Colors.white,
                           onPressed: () {
                             Navigator.pushAndRemoveUntil(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Homepage(),
+                                    builder: (context) => const Homepage(),
                                     maintainState: true),
                                 (Route<dynamic> route) => false);
                           },
-                          icon: Icon(Icons.arrow_forward),
+                          icon: const Icon(Icons.arrow_forward),
                         ),
                       )
                     ],
                   ),
                   Container(
-                    padding: EdgeInsets.only(
+                    padding: const EdgeInsets.only(
                       top: 40,
                     ),
                     child: Row(
@@ -104,9 +104,9 @@ class _LoginpageState extends State<Loginpage> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => Signuppage()));
+                                      builder: (context) => const Signuppage()));
                             },
-                            child: Text(
+                            child: const Text(
                               'Sign Up',
                               style: TextStyle(
                                   decoration: TextDecoration.underline,
@@ -118,9 +118,9 @@ class _LoginpageState extends State<Loginpage> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => Forgetpass()));
+                                      builder: (context) => const Forgetpass()));
                             },
-                            child: Text(
+                            child: const Text(
                               'Forget Password?',
                               style: TextStyle(
                                   decoration: TextDecoration.underline,

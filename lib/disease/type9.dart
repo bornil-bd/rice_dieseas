@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class Type9 extends StatefulWidget {
   const Type9({super.key});
@@ -13,7 +12,7 @@ class _Type9State extends State<Type9> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Bacterial Leaf Blight (BLB)"),
+        title: const Text("Bacterial Leaf Blight (BLB)"),
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
@@ -25,12 +24,12 @@ class _Type9State extends State<Type9> {
                 fit: BoxFit.cover,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Center(
               child: Container(
-                child: Text(
+                child: const Text(
                   "Bacterial Leaf Blight (BLB)",
                   style: TextStyle(
                     fontSize: 25,
@@ -40,7 +39,7 @@ class _Type9State extends State<Type9> {
               ),
             ),
             Container(
-              padding: EdgeInsets.only(left: 20, right: 20),
+              padding: const EdgeInsets.only(left: 20, right: 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -59,7 +58,7 @@ class _Type9State extends State<Type9> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   RichText(
@@ -79,7 +78,7 @@ class _Type9State extends State<Type9> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   RichText(
